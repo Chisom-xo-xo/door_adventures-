@@ -63,7 +63,22 @@ if choice=='A':
         if tries_ii==3:
                 print('\nYou failed too many times. Returnng to LocA.\n')
                 continue
+        tries_iii=0
+        while tries_iii<3:
+            print('CLUE: PLACEHOLDER CLUE LOCAiii')
+            answer_Aiii=input('>')
+            answer_Aiii=answer_Aiii.lower()
+            if answer_Aiii=='placeholder answer locaiii':
+                print('\nCorrect! You may continue.\n')
+                break
+            else:
+                tries_iii=tries_iii+1
+                print('\nIncorrect. Tries left:' + str(3-tries_iii))
+        if tries_iii==3:
+                print('\nYou failed too many times. Returning to LocA.\n')
+                continue
         else:
                 break
+            
             
         
